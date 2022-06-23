@@ -17,6 +17,7 @@ class Myapp extends StatelessWidget {
 class Calculator extends StatefulWidget {
   const Calculator({Key? key}) : super(key: key);
 
+
   @override
   State<Calculator> createState() => _CalculatorState();
 }
@@ -26,7 +27,8 @@ class _CalculatorState extends State<Calculator> {
     return Container(
       child: RaisedButton(
         onPressed: () {
-          // add function  for button press
+          
+
         },
         child: Text(
           btntxt,
@@ -55,7 +57,6 @@ class _CalculatorState extends State<Calculator> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              // claculator display
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -69,13 +70,14 @@ class _CalculatorState extends State<Calculator> {
                   ),
                 ],
               ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  calcbutton("AC", Colors.grey, Colors.black),
-                  calcbutton("+/-", Colors.grey, Colors.black),
-                  calcbutton("%", Colors.grey, Colors.black),
-                  calcbutton("/", Colors.amber, Colors.white),
+                  calcbutton("AC", Colors.grey, Colors.white),
+                  calcbutton("+/-", Colors.grey, Colors.white),
+                  calcbutton("%", Colors.grey, Colors.white),
+                  calcbutton("/", Colors.grey, Colors.white),
                 ],
               ),
               SizedBox(
@@ -85,10 +87,10 @@ class _CalculatorState extends State<Calculator> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  calcbutton("7", Colors.grey, Colors.black),
-                  calcbutton("8", Colors.grey, Colors.black),
-                  calcbutton("9", Colors.grey, Colors.black),
-                  calcbutton("X", Colors.amber, Colors.white),
+                  calcbutton("7", Colors.black, Colors.white),
+                  calcbutton("8", Colors.black, Colors.white),
+                  calcbutton("9", Colors.black, Colors.white),
+                  calcbutton("X", Colors.grey, Colors.white),
                 ],
               ),
               SizedBox(
@@ -99,10 +101,10 @@ class _CalculatorState extends State<Calculator> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  calcbutton("4", Colors.grey, Colors.black),
-                  calcbutton("5", Colors.grey, Colors.black),
-                  calcbutton("6", Colors.grey, Colors.black),
-                  calcbutton("-", Colors.amber, Colors.white),
+                  calcbutton("4", Colors.black, Colors.white),
+                  calcbutton("5", Colors.black, Colors.white),
+                  calcbutton("6", Colors.black, Colors.white),
+                  calcbutton("-", Colors.grey, Colors.white),
                 ],
               ),
               SizedBox(
@@ -113,10 +115,10 @@ class _CalculatorState extends State<Calculator> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  calcbutton("1", Colors.grey, Colors.black),
-                  calcbutton("2", Colors.grey, Colors.black),
-                  calcbutton("3", Colors.grey, Colors.black),
-                  calcbutton("+", Colors.amber, Colors.white),
+                  calcbutton("1", Colors.black, Colors.white),
+                  calcbutton("2", Colors.black, Colors.white),
+                  calcbutton("3", Colors.black, Colors.white),
+                  calcbutton("+", Colors.grey, Colors.white),
                 ],
               ),
               SizedBox(
@@ -127,16 +129,18 @@ class _CalculatorState extends State<Calculator> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   RaisedButton(
-                    padding: EdgeInsets.fromLTRB(34, 20, 134, 34),
-                    onPressed: () {},
+                    padding: EdgeInsets.fromLTRB(34, 20, 144, 24),
+                    onPressed: () {
+
+                    },
                     shape: StadiumBorder(),
                     child: Text(
                       '0',
-                      style: TextStyle(fontSize: 35, color: Colors.grey),
+                      style: TextStyle(fontSize: 35, color: Colors.black),
                     ),
                   ),
-                  calcbutton(".", Colors.grey, Colors.black),
-                  calcbutton("=", Colors.amber, Colors.white),
+                  calcbutton(".", Colors.white, Colors.black),
+                  calcbutton("=", Colors.grey, Colors.white),
                 ],
               ),
               SizedBox(
